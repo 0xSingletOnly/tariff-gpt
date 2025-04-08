@@ -1,6 +1,6 @@
 ---
 title: "World suffers if US-China relations fray with tariffs: PM Wong"
-source: "Straits Times"
+source: "The Straits Times"
 date: "2025-04-08" 
 url: "https://www.straitstimes.com/singapore/politics/world-suffers-if-us-china-relations-fray-with-tariffs-pm-wong"
 category: "news"  # Options: news, analysis, policy, expert_opinion

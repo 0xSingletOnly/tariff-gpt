@@ -1,6 +1,6 @@
 ---
 title: "Trump’s tariffs: What are Singapore’s possible options in responding?"
-source: "Straits Times"
+source: "The Straits Times"
 date: "2025-04-08" 
 url: "https://www.straitstimes.com/world/united-states/trumps-tariffs-what-are-singapores-possible-options-in-responding"
 category: "analysis"  # Options: news, analysis, policy, expert_opinion

@@ -1,6 +1,6 @@
 ---
 title: "‘It’s going to affect us very badly’: New Trump tariffs cast gloom over businesses in Asia "
-source: "Straits Times"
+source: "The Straits Times"
 date: "2025-04-06" 
 url: "https://www.straitstimes.com/asia/its-going-to-affect-us-very-badly-new-trump-tariffs-cast-gloom-over-businesses-in-asia"
 category: "analysis"  # Options: news, analysis, policy, expert_opinion
