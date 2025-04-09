@@ -31,4 +31,34 @@ TEST_QUESTIONS = [
         "category": "financial_impact",
         "difficulty": "medium",
     },
+    {
+        "id": "q6",
+        "question": "How might Trump's tariffs affect foreign direct investment flows between the US and Singapore?",
+        "category": "investment_impact",
+        "difficulty": "hard",
+    },
+    {
+        "id": "q7",
+        "question": "What would be the impact of Trump's tariff policies on Singapore's pharmaceutical exports to the US?",
+        "category": "industry_specific",
+        "difficulty": "medium",
+    },
+    {
+        "id": "q8",
+        "question": "How could Trump's tariffs affect Singapore's implementation of the US-Singapore Free Trade Agreement?",
+        "category": "trade_agreements",
+        "difficulty": "hard",
+    },
+    {
+        "id": "q9",
+        "question": "What opportunities might arise for Singapore's logistics sector if manufacturing shifts from China due to Trump's tariffs?",
+        "category": "supply_chain",
+        "difficulty": "medium",
+    },
+    {
+        "id": "q10",
+        "question": "How would Trump's proposed tariffs affect inflation rates in Singapore?",
+        "category": "macroeconomic",
+        "difficulty": "easy",
+    },
 ]
