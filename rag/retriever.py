@@ -114,12 +114,12 @@ Do not add information that isn't implied by the original query. Respond with on
         """Create a document compressor that extracts the most relevant parts of documents."""
         # Template for extraction
         prompt_template = PromptTemplate(
-            input_variables=["question", "document"],
+            input_variables=["question", "context"],
             template="""You are an expert assistant that helps extract the most relevant information from documents about Trump's tariff policies and their impact on Singapore.
 
 User question: {question}
 
-Document text: {document}
+Document text: {context}
 
 Extract only the parts of the document that are relevant to answering the question. Include specific facts, figures, and analysis about tariffs and Singapore. Don't exclude important economic data or impact assessments.
 
@@ -138,7 +138,7 @@ RELEVANT INFORMATION:"""
             processed_query = query
         
         # Retrieve documents using hybrid retrieval
-        retrieved_docs = self.hybrid_retriever.get_relevant_documents(processed_query)
+        retrieved_docs = self.hybrid_retriever.invoke(processed_query)
         
         # Format with sources
         results = []
@@ -163,7 +163,7 @@ RELEVANT INFORMATION:"""
     def retrieve_with_compression(self, query: str) -> List[Document]:
         """Retrieve and compress documents to focus on most relevant parts."""
         # First retrieve with hybrid retrieval
-        raw_docs = self.hybrid_retriever.get_relevant_documents(query)
+        raw_docs = self.hybrid_retriever.invoke(query)
         
         # Create compressor
         compressor = self.create_document_compressor()
@@ -174,6 +174,6 @@ RELEVANT INFORMATION:"""
         )
         
         # Compress documents
-        compressed_docs = pipeline.transform_documents(raw_docs, query)
+        compressed_docs = pipeline.compress_documents(raw_docs, query)
         
         return compressed_docs
